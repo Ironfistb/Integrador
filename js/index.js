@@ -31,9 +31,9 @@ function mostrarTotal(){
     let precio = 200;
     let cantidad = parseInt(document.getElementById('cantidad').value);    
     let total1 = precio * cantidad;
-    console.log(total1);
+    //console.log(total1);
     let total = total1 - (total1 * cat)
-    console.log(total);
+    //console.log(total);
     document.getElementById('total').value = `Total a pagar: \$${total}`;
 }
 
@@ -44,15 +44,8 @@ function limpiarTodo(){
     document.getElementById('cantidad').value = '1';
 }
 
-/*function cat() {
-    var cate = document.getElementById("categoria").value;
-    console.log(cate)
-}   */
-
-
 
 
 
 document.getElementById('btn_calcular').addEventListener('click', mostrarTotal);
 document.getElementById('borrar').addEventListener('click', limpiarTodo);
-// let cat = document.getElementById("categoria").value;
